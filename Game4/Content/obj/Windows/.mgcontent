@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Admin Battle.mp3</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Ball Sprite.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Background 1.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Paddle Sprite.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Display.spritefont</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block1.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block2.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block3.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block4.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block5.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block6.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Block7.png</File>
+    <File>E:/Structured Programing For Games/Breakout (Assessment 2)/Breakout/Game4/Content/Explosion1.wav</File>
+  </SourceFiles>
+</SourceFileCollection>

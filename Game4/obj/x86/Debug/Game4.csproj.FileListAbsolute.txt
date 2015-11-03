@@ -1,0 +1,67 @@
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\obj\x86\Debug\Game4.csprojResolveAssemblyReference.cache
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\Content\Admin Battle.wma
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\Content\Admin Battle.xnb
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\Content\Background 1.xnb
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\Content\Ball Sprite.xnb
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\Content\Paddle Sprite.xnb
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\MonoGame.Framework.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.XAudio2.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct3D11.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.DXGI.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct2D1.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.XInput.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.RawInput.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct3D9.dll
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\MonoGame.Framework.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.XAudio2.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct3D11.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.DXGI.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct2D1.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.XInput.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.RawInput.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\bin\Windows\Debug\SharpDX.Direct3D9.xml
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\obj\x86\Debug\Game4.exe
+S:\Documents\Visual Studio 2013\Projects\Game4\Game4\obj\x86\Debug\Game4.pdb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.exe
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.pdb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.wma
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Background 1.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Ball Sprite.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Paddle Sprite.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Game4.exe
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Game4.pdb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\MonoGame.Framework.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.XAudio2.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct3D11.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.DXGI.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct2D1.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.XInput.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.RawInput.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct3D9.dll
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\MonoGame.Framework.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.XAudio2.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct3D11.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.DXGI.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct2D1.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.XInput.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.RawInput.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct3D9.xml
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.csprojResolveAssemblyReference.cache
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Display.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block1.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block2.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block3.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block4.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block5.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block6.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block7.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Explosion1.xnb
