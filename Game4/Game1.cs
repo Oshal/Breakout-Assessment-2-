@@ -16,13 +16,18 @@ namespace Game4
     
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-       
+
+        // To make the ball spin
+        float Spin;
 
          // Create a lives counter
         int Lives;
 
         // Create a score counter
         int Score;
+
+        // Used to check how many levels have been cleared
+        int Level;
 
         // Used for the Spritefont
         SpriteFont Display;
@@ -56,7 +61,7 @@ namespace Game4
 
         //To set the paddle's speed
         Vector2 paddlespeed;
-
+        
         // Used for the background music variable
         protected Song song;
         protected SpriteFont font;
@@ -93,6 +98,9 @@ namespace Game4
 
             // Set the initial amount of lives
             Lives = 3;
+
+            // Set the intitial amount of levels cleared
+            Level = 0;
         }
 
         /// <summary>
@@ -291,13 +299,14 @@ namespace Game4
                 ballspeed = new Vector2(01.0f, 5.0f);
 
             }
-            // Level 2 Steps
+            // Level 2-3 Steps
             // When no more blocks exist
             if (blocks.Count == 0)
             {
             // Add 1 to the lives count, add 100 to the score count
             Lives = Lives + 1;
             Score = Score + 100;
+            Level = Level + 1;
 
             // Reset the ball and paddle positions
             ballposition = new Vector2(400.0f, 300.0f);
@@ -305,28 +314,91 @@ namespace Game4
 
             // Clear the current list of blocks 
             blocks.Clear();
+            if (Level == 1)
+            {
 
-            // Draw a whole new batch of blocks for level 2
-            // Batch 1
-            blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 400, 20));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 360, 40));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 320, 60));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 280, 80));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 240, 120));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 280, 160));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 320, 200));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 360, 240));
+                // Draw a new batch of blocks for level 2
+                // Batch 1
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 200));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 200));
 
-            // Batch 2
-            blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 440, 20));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 480, 40));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 520, 60));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 560, 80));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 600, 120));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 640, 160));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 680, 200));
-            blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 720, 240));
+                // Batch 2
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 220));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 220));
+
+                // Batch 3
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 240));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 240));
+
+                // Batch 4
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 260));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 260));
+
+                // Batch 5
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 280));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 280));
+
+                // Batch 6
+                blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 300));
+                blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 300));
             }
+            if (Level == 2) {
+               // Draw a new batch of blocks for level 3
+               // Batch 1
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 200));
+            }
+            
+
+            
+            }
+            // Causes the ball to spin
+            Spin = Spin + 00.5f;
+            // Makes sure the ball's spin doesn't go above 360
+            if (Spin > 360) Spin = 0;
+
                 base.Update(gameTime);
             
         }
@@ -354,7 +426,8 @@ namespace Game4
 
             spriteBatch.Draw(Background, Backgroundposition);
 
-            spriteBatch.Draw(Ball, ballposition);
+            // The extra code here is to make the ball spin without phasing through blocks
+            spriteBatch.Draw(Ball, ballposition + new Vector2(Ball.Width / 2, Ball.Height / 2), null, Color.White, MathHelper.ToRadians(Spin), new Vector2(Ball.Width / 2, Ball.Height / 2), 1f, SpriteEffects.None, 1f);
 
             spriteBatch.Draw(Paddle, paddleposition);
 
