@@ -28,11 +28,6 @@ S:\Documents\Visual Studio 2013\Projects\Game4\Game4\obj\x86\Debug\Game4.exe
 S:\Documents\Visual Studio 2013\Projects\Game4\Game4\obj\x86\Debug\Game4.pdb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.exe
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.pdb
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.wma
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.xnb
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Background 1.xnb
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Ball Sprite.xnb
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Paddle Sprite.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Game4.exe
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Game4.pdb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\MonoGame.Framework.dll
@@ -56,7 +51,10 @@ E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Wi
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.RawInput.xml
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\SharpDX.Direct3D9.xml
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\obj\x86\Debug\Game4.csprojResolveAssemblyReference.cache
-E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Display.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.wma
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Admin Battle.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Background 1.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Ball Sprite.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block1.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block2.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block3.xnb
@@ -64,4 +62,12 @@ E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Wi
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block5.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block6.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Block7.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Display.xnb
 E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Explosion1.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Paddle Sprite.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Background 2.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Background 3.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Deoxys Battle.wma
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Deoxys Battle.xnb
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Stage 3 Theme.wma
+E:\Structured Programing For Games\Breakout (Assessment 2)\Breakout\Game4\bin\Windows\Debug\Content\Stage 3 Theme.xnb

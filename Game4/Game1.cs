@@ -35,7 +35,7 @@ namespace Game4
         // Create a boolean flag for signalling the game ending
         bool GameEnding;
 
-        // Create an integer representing the amount of time the game ended in milliseconds
+        // Create an double representing the amount of time the game ended in milliseconds
         double TimeGameEnded;
 
         // Creates an integer that represents when we should close the game in milliseconds
@@ -200,6 +200,7 @@ namespace Game4
             //Used for playing the background music
             Song song = Content.Load<Song>("Admin Battle");
             MediaPlayer.Play(song);
+            
 
             // Causes the background music to loop
             MediaPlayer.IsRepeating = true;
@@ -258,13 +259,15 @@ namespace Game4
             // Causes the ball to bounce when it hits the edge of the screen
             if (ballposition.X < 0 || ballposition.X > 780)
                 ballspeed.X = -ballspeed.X;
+           
 
             // Causes the ball to bounce when hitting the paddle
-            if (Paddle1.Intersects(Ball1) && ballspeed.Y > 0)
-                ballspeed.Y = -ballspeed.Y;
+                if (Paddle1.Intersects(Ball1) && ballspeed.Y > 0)
+                    ballspeed.Y = -ballspeed.Y;
+               
                 
             // Causes the ball to bounce when hitting the roof
-            if (ballposition.Y < 0)
+            if (ballposition.Y < 0 && ballspeed.Y < 0)
                 ballspeed.Y = -ballspeed.Y;
 
             // Causes the ball to destroy a block and bounce when it hits a block
@@ -308,14 +311,20 @@ namespace Game4
             Score = Score + 100;
             Level = Level + 1;
 
+            // Stop the music
+            MediaPlayer.Stop();
+
             // Reset the ball and paddle positions
             ballposition = new Vector2(400.0f, 300.0f);
             paddleposition = new Vector2(300.0f, 545.0f);
 
             // Clear the current list of blocks 
             blocks.Clear();
+            // If one level has been cleared move on to level 2
             if (Level == 1)
             {
+                // Load level 2's background
+                Background = Content.Load<Texture2D>("Background 3");
 
                 // Draw a new batch of blocks for level 2
                 // Batch 1
@@ -377,20 +386,154 @@ namespace Game4
                 blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 300));
                 blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 300));
                 blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 300));
+
+                //Used for playing the background music for level 2
+                Song song = Content.Load<Song>("Deoxys Battle");
+                MediaPlayer.Play(song);
+                
+
+                // Causes the background music to loop
+                MediaPlayer.IsRepeating = true;
             }
-            if (Level == 2) {
+                // If two levels have been cleared move on to level 3
+            if (Level == 2) 
+            {
+                // Load level 3's background
+                Background = Content.Load<Texture2D>("Background 2");
+
                // Draw a new batch of blocks for level 3
                // Batch 1
-               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 360, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 400, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 440, 200));
-               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 480, 200));
+               // There are two blocks on the same area to create the impression of a block that takes two hits to break
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 500, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 500, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 500, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 500, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 460, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 460, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 460, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 460, 60));
+
+               // Batch 2
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 380, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 380, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 380, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 380, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 340, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 340, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 340, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 340, 60));
+               
+               // Batch 3
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 260, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 260, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 260, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 260, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 220, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 220, 40));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 220, 60));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 220, 60));
+
+               // Batch 4
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 40, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 80, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 120, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 160, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 200, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 240, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 280, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 320, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 360, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 400, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 440, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 480, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 520, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 560, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 600, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 640, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 680, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 720, 100));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block3"), 760, 100));
+
+               // Batch 5
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 500, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 500, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 500, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 500, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 460, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 460, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 460, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 460, 220));
+
+               // Batch 6
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 380, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 380, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 380, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 380, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 340, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 340, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block7"), 340, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block6"), 340, 220));
+
+               // Batch 7
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 260, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 260, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 260, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 260, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 220, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 220, 200));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block5"), 220, 220));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block4"), 220, 220));
+
+               // Batch 8
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 40, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 80, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 120, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 160, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 200, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 240, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 280, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 320, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 360, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 400, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 440, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 480, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 520, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 560, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 600, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 640, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 680, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 720, 240));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block2"), 760, 240));
+
+               // Batch 9
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 40, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 80, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 120, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 160, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 200, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 240, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 280, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 320, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 360, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 400, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 440, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 480, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 520, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 560, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 600, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 640, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 680, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 720, 260));
+               blocks.Add(new Block(Content.Load<Texture2D>("Block1"), 760, 260));
+
+               //Used for playing the background music for level 3
+               Song song = Content.Load<Song>("Stage 3 Theme");
+               MediaPlayer.Play(song);
+
+               // Causes the background music to loop
+               MediaPlayer.IsRepeating = true;
             }
-            
+
 
             
             }
@@ -454,7 +597,13 @@ namespace Game4
                 TimeGameEnded = gameTime.TotalGameTime.TotalMilliseconds;
             }
 
-          
+            // Says "Game Cleared" along with the players score if all levels are cleared
+            if (Level == 3 && !GameEnding)
+            {
+                spriteBatch.DrawString(Display, "Game Cleared, Good Job! Your Total Score Was: " + Score, new Vector2(300, 320), Color.Red);
+                GameEnding = true;
+                TimeGameEnded = gameTime.TotalGameTime.TotalMilliseconds;
+            }
 
             spriteBatch.End();
 
